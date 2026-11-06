@@ -1,0 +1,50 @@
+
+.encabezado {
+    display: flex;      
+    align-items: center;
+    padding: 10px;
+    background-color: #0f0f0f;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.grid-videos {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.miniatura {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+
+.miniatura:hover {
+    transform: scale(1.05); 
+}
+
+.video-card {
+    text-decoration: none;
+    color: white;
+}
+
+.detalles {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+
+@media (min-width: 768px) {
+    .grid-videos {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
